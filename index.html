@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Firebase Expo</title>
+
+        <!--    Firebase core SDK must be listed at top-->
+        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+        <!--    Firebase Services-->
+        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+
+        <!--    Firebase config SDK should be after services and core sdk-->
+        <script src="firebase-sdk.js" type="application/javascript"></script>
+
+
+        <!--    Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--    JS Frameworks and essentials-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+        <link href="stylesheet.css" rel="stylesheet">
+
+        <script src="landingPage.js" type="application/javascript"></script>
+
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar" id="myNavbar">
+
+            <a class="navbar-brand" id="navTitle">Firbase Expo</a>
+
+            <div class="form-inline" id="tagLine">
+
+                A Complete Project on Firebase Functionalities
+
+            </div>
+
+        </nav>
+
+
+
+
+        <div id="myContent">
+
+
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" id="myAlert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" id="myAlertClose" class="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+
+            <div id="loading">
+
+                <img src="extras/loader-gif.gif" alt="loader" id="loaderImg">
+
+                <p class="text">Loading...Please wait!</p>
+
+            </div>
+
+
+
+            <div id="signInForm">
+
+
+
+                <div id="headSignIn">
+                    <h4>Wecome User!</h4>
+                    <i class="far fa-window-close" id="closeSiginIn"></i>
+                </div>
+
+                <hr>
+
+                <div>
+
+                    <div class="form-group">
+                        <label for="siginInEmailAddress">Email address</label>
+                        <input type="email" class="form-control" id="siginInEmailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signInPassword">Password</label>
+                        <input type="password" class="form-control" id="signInPassword" placeholder="Password">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success" id="sigInSubmit">Submit</button>
+                </div>
+
+            </div>
+
+
+            <div id="signUpForm">
+
+
+                <div id="headSignUp">
+                    <h4>Create New Account!</h4>
+                    <i class="far fa-window-close" id="closeSignUp"></i>
+                </div>
+
+                <hr>
+
+                <div>
+
+                    <div class="form-group">
+                        <label for="nameSignUp">Full Name</label>
+                        <input type="text" class="form-control" id="nameSignUp" placeholder="Enter Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="siginUpEmailAddress">Email address</label>
+                        <input type="email" class="form-control" id="siginUpEmailAddress" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signUpPassword">Password</label>
+                        <input type="password" class="form-control" id="signUpPassword" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnfSignUpPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="cnfSignUpPassword" placeholder="Enter Password again" required>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success" id="signUpSubmit">Create Account</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="authControls">
+
+                <div id="logIn">
+
+                    <img src="extras/login.png" alt="logInIcon">
+
+
+                </div>
+
+                <div id="signUp">
+
+                    <img src="extras/signup.png" alt="signUpIcon">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
