@@ -152,3 +152,85 @@
     z-index: +2;
     position: fixed;
 }
+
+
+/*---------------------------------Profile Page----------------------------*/
+
+
+
+#profileDiv
+{
+
+    width: 60%;
+    padding: 1%;
+    background: white;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#profilePic
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profilePicDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nameEmailDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#headProfile
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#personalDetails
+{
+    margin: 5%;
+}
+
+.prsnl-details
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.detail
+{
+    text-align: right;
+}
+.detailed{
+    text-align: left;
+}
+
+#editContent
+{
+    position: fixed;
+    z-index: +2;
+    bottom: 3%;
+    right: 3%;
+    background: white;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 0.5%;
+
+}
+
+#editContent:hover
+{
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+

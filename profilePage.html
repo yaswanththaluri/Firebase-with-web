@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Firebase Expo</title>
+
+        <!--    Firebase core SDK must be listed at top-->
+        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+        <!--    Firebase Services-->
+        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+
+        <!--    Firebase config SDK should be after services and core sdk-->
+        <script src="firebase-sdk.js" type="application/javascript"></script>
+
+
+        <!--    Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--    JS Frameworks and essentials-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+        <link href="stylesheet.css" rel="stylesheet">
+
+        <script src="profileJS.js" type="application/javascript"></script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar" id="myNavbar">
+
+            <a class="navbar-brand" id="navTitle">Firbase Expo @ User Profile</a>
+
+            <div class="form-inline" id="tagLine">
+
+                A Complete Project on Firebase Functionalities
+
+            </div>
+
+        </nav>
+
+        <div id="editContent">
+            <img src="extras/edit-Icon.png" alt="editProfile" id="editIcon">
+        </div>
+
+        <div id="myContent">
+
+            <div id="profileDiv">
+
+                <div class="row" id="headProfile">
+
+                    <div class="col-md-6" id="profilePicDiv">
+                        <img src="extras/bunny.jpg" alt="profilePic" id="profilePic">
+                    </div>
+
+                    <div class="col-md-6" id="nameEmailDiv">
+                        <h2>Madhulika Thaluri</h2>
+                        <h6>madhu.thaluri@gmail.com</h6>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="personalDetails">
+
+                    <div class="row prsnl-details">
+                        <div class="col-md-6 detail">Date of Birth  :  </div>
+                        <div class="col-md-6 detailed">20-05-2004</div>
+                    </div>
+
+                    <div class="row prsnl-details">
+                        <div class="col-md-6 detail">City  :  </div>
+                        <div class="col-md-6 detailed">Hyderabad</div>
+                    </div>
+
+                    <div class="row prsnl-details">
+                        <div class="col-md-6 detail">Current Status  :  </div>
+                        <div class="col-md-6 detailed">Student</div>
+                    </div>
+
+                    <div class="row prsnl-details">
+                        <div class="col-md-6 detail">Relationship Status  :  </div>
+                        <div class="col-md-6 detailed">Engaged</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
